@@ -54,9 +54,6 @@ export default function App() {
       <div>
         <InputText icon={SearchIcon} placeholder="Buscar foto" />
       </div>
-      <div>
-        <InputText icon={SearchIcon} placeholder="Buscar foto" />
-      </div>
     </div>
   );
 }
