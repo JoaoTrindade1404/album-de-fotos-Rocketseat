@@ -51,9 +51,12 @@ export default function App() {
         <Divider />
       </div>
 
-	  <div>
-		<InputText icon={SearchIcon} placeholder="Buscar foto"/>
-	  </div>
+      <div>
+        <InputText icon={SearchIcon} placeholder="Buscar foto" />
+      </div>
+      <div>
+        <InputText icon={SearchIcon} placeholder="Buscar foto" />
+      </div>
     </div>
   );
 }
