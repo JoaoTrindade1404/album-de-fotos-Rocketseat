@@ -8,8 +8,12 @@ import Divider from "./components/divider";
 import SearchIcon from "./assets/icons/search.svg?react";
 import InputText from "./components/input-text";
 import InputCheckbox from "./components/input-checkbox";
+import InputSingleFile from "./components/input-single-file";
+import { useForm } from "react-hook-form";
 
 export default function App() {
+  const form = useForm();
+
   return (
     <div className="grid gap-7 p-6">
       <div className="flex gap-3">
@@ -57,6 +61,14 @@ export default function App() {
       </div>
       <div>
         <InputCheckbox />
+      </div>
+      <div>
+        <InputSingleFile
+          form={form}
+          {...form.register("file")}
+          allowedExtensions={["png", "jpg", "jpeg", "webp"]}
+          maxFileSizeInMB={50}
+        />
       </div>
     </div>
   );
